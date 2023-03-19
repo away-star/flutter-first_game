@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chat/breath.dart';
+import 'package:flutter_chat/counter.dart';
 import 'package:flutter_chat/game.dart';
 
 void main() => runApp(ChatApp());
@@ -15,7 +17,7 @@ class ChatApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Game(),
+      home: Braeth(),
     );
   }
 }

@@ -14,6 +14,7 @@ class _GameState extends State<Game> {
   final _inputController = StreamController.broadcast();
   final _scoreController = StreamController.broadcast();
 
+
   //一次改进代码(使用StreamController的监听)
   // num score = 0;
   //
@@ -46,6 +47,8 @@ class _GameState extends State<Game> {
 
         //一次改进代码(使用StreamController的监听)
         //title: Center(child: Text("Score: $score")),
+
+
         //初始代码
         // title: Center(
         //   child: StreamBuilder(
@@ -178,7 +181,7 @@ class _PuzzleState extends State<Puzzle> with SingleTickerProviderStateMixin {
     widget.inputStream.listen((input) {
       if (input == a + b) {
         reset();
-        //答对了 添加5事件
+        //答对了 添加 5事件
         widget.scoreStream.add(5);
       }
     });
